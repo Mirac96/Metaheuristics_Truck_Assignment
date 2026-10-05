@@ -1,0 +1,274 @@
+{
+  "summary": [
+    {
+      "metaheuristic": "GA",
+      "n_runs": 30,
+      "best": 26.239704,
+      "worst": 27.787624,
+      "mean": 27.183055033333336,
+      "median": 27.107461999999998,
+      "std": 0.36252870109261076,
+      "iqr": 0.5973682499999988,
+      "range": 1.5479200000000013,
+      "mean_time_s": 12.780593333333334,
+      "mean_wheels": 115.4,
+      "mean_utilisation": 0.6963148666666666,
+      "pct_close_to_global_best": 6.666666666666667,
+      "pct_below_global_median": 93.33333333333333
+    },
+    {
+      "metaheuristic": "HS",
+      "n_runs": 30,
+      "best": 26.815577,
+      "worst": 28.788447,
+      "mean": 27.685382699999998,
+      "median": 27.7227775,
+      "std": 0.4163458559708256,
+      "iqr": 0.572841750000002,
+      "range": 1.9728700000000003,
+      "mean_time_s": 16.102420000000002,
+      "mean_wheels": 115.4,
+      "mean_utilisation": 0.6907029333333334,
+      "pct_close_to_global_best": 0.0,
+      "pct_below_global_median": 53.333333333333336
+    },
+    {
+      "metaheuristic": "IG",
+      "n_runs": 30,
+      "best": 27.35138,
+      "worst": 30.856673,
+      "mean": 29.109771266666666,
+      "median": 29.020224,
+      "std": 0.9092226684479717,
+      "iqr": 1.370247250000002,
+      "range": 3.5052930000000018,
+      "mean_time_s": 25.05084,
+      "mean_wheels": 121.7,
+      "mean_utilisation": 0.6747898333333333,
+      "pct_close_to_global_best": 0.0,
+      "pct_below_global_median": 3.3333333333333335
+    }
+  ],
+  "tests": {
+    "names": [
+      "GA",
+      "HS",
+      "IG"
+    ],
+    "alpha": 0.05,
+    "normality": [
+      {
+        "metaheuristic": "GA",
+        "jb": 0.2558440298549427,
+        "p": 0.8799219972497901,
+        "verdict": "normal"
+      },
+      {
+        "metaheuristic": "HS",
+        "jb": 0.39654841607734,
+        "p": 0.8201449319684238,
+        "verdict": "normal"
+      },
+      {
+        "metaheuristic": "IG",
+        "jb": 0.8993570613469402,
+        "p": 0.637833162464835,
+        "verdict": "normal"
+      }
+    ],
+    "mean_ranks": {
+      "GA": 21.4,
+      "HS": 42.0,
+      "IG": 73.1
+    },
+    "global_test": "ANOVA de un factor",
+    "global_stat": 79.4566530671131,
+    "global_stat_name": "F",
+    "global_p": 2.344602605750608e-20,
+    "global_significant": true,
+    "pairwise": [
+      {
+        "pair": "GA vs HS",
+        "test": "t (Welch)",
+        "stat": -4.983804007848586,
+        "p": 6.1617149364060165e-06,
+        "mean_a": 27.183055033333336,
+        "mean_b": 27.685382699999998,
+        "p_holm": 6.1617149364060165e-06,
+        "significant_holm": true
+      },
+      {
+        "pair": "GA vs IG",
+        "test": "t (Welch)",
+        "stat": -10.781272809470837,
+        "p": 4.0590970349055533e-13,
+        "mean_a": 27.183055033333336,
+        "mean_b": 29.109771266666666,
+        "p_holm": 1.217729110471666e-12,
+        "significant_holm": true
+      },
+      {
+        "pair": "HS vs IG",
+        "test": "t (Welch)",
+        "stat": -7.8015815063542435,
+        "p": 1.3205234850480652e-09,
+        "mean_a": 27.685382699999998,
+        "mean_b": 29.109771266666666,
+        "p_holm": 2.6410469700961304e-09,
+        "significant_holm": true
+      }
+    ],
+    "bonferroni_alpha": 0.016666666666666666,
+    "all_normal": true
+  },
+  "convergence_speed": {
+    "GA": 650.1,
+    "HS": 751.4,
+    "IG": 731.5666666666667
+  },
+  "profiles": {
+    "GA": {
+      "n_wheels": 121,
+      "objective": 26.23970445663631,
+      "utilisation": 0.706853794625574,
+      "by_type": {
+        "R1": 13,
+        "R2": 14,
+        "R3": 14,
+        "R4": 10,
+        "R5": 9,
+        "R6": 11,
+        "R7": 6,
+        "R8": 8,
+        "R9": 9,
+        "R10": 9,
+        "R11": 7,
+        "R12": 11
+      },
+      "orientations": {
+        "flat": 39,
+        "parallel_to_end": 25,
+        "parallel_to_side": 57
+      },
+      "dominant_orientation_by_type": {
+        "R1": "parallel_to_end",
+        "R2": "flat",
+        "R3": "parallel_to_side",
+        "R4": "parallel_to_side",
+        "R5": "flat",
+        "R6": "flat",
+        "R7": "parallel_to_side",
+        "R8": "flat",
+        "R9": "parallel_to_side",
+        "R10": "parallel_to_side",
+        "R11": "parallel_to_side",
+        "R12": "parallel_to_side"
+      },
+      "pct_big_flat": 36.0
+    },
+    "HS": {
+      "n_wheels": 104,
+      "objective": 26.81557666715782,
+      "utilisation": 0.7004202330900793,
+      "by_type": {
+        "R1": 13,
+        "R2": 14,
+        "R3": 6,
+        "R4": 6,
+        "R5": 7,
+        "R6": 6,
+        "R7": 7,
+        "R8": 9,
+        "R9": 9,
+        "R10": 6,
+        "R11": 12,
+        "R12": 9
+      },
+      "orientations": {
+        "flat": 29,
+        "parallel_to_end": 23,
+        "parallel_to_side": 52
+      },
+      "dominant_orientation_by_type": {
+        "R1": "flat",
+        "R2": "flat",
+        "R3": "parallel_to_side",
+        "R4": "flat",
+        "R5": "parallel_to_side",
+        "R6": "parallel_to_side",
+        "R7": "parallel_to_side",
+        "R8": "parallel_to_side",
+        "R9": "parallel_to_side",
+        "R10": "parallel_to_end",
+        "R11": "parallel_to_side",
+        "R12": "flat"
+      },
+      "pct_big_flat": 25.0
+    },
+    "IG": {
+      "n_wheels": 122,
+      "objective": 27.35138026835044,
+      "utilisation": 0.6944343122968348,
+      "by_type": {
+        "R1": 12,
+        "R2": 12,
+        "R3": 8,
+        "R4": 13,
+        "R5": 8,
+        "R6": 13,
+        "R7": 10,
+        "R8": 10,
+        "R9": 12,
+        "R10": 7,
+        "R11": 5,
+        "R12": 12
+      },
+      "orientations": {
+        "flat": 51,
+        "parallel_to_end": 15,
+        "parallel_to_side": 56
+      },
+      "dominant_orientation_by_type": {
+        "R1": "parallel_to_side",
+        "R2": "flat",
+        "R3": "flat",
+        "R4": "parallel_to_side",
+        "R5": "flat",
+        "R6": "flat",
+        "R7": "parallel_to_side",
+        "R8": "parallel_to_side",
+        "R9": "parallel_to_side",
+        "R10": "flat",
+        "R11": "parallel_to_side",
+        "R12": "flat"
+      },
+      "pct_big_flat": 37.5
+    }
+  },
+  "pearson_wheels_vs_objective": 0.3906883370520393,
+  "configs": {
+    "GA": {
+      "pop": 20,
+      "p_cross": 0.9,
+      "p_perm": 0.01,
+      "p_orient": 0.02,
+      "p_skip": 0.01,
+      "tournament": 3,
+      "elite": 2
+    },
+    "HS": {
+      "hms": 30,
+      "hmcr": 0.98,
+      "par": 0.01,
+      "bw": 3,
+      "par_o": 0.01,
+      "p_skip_rand": 0.15
+    },
+    "IG": {
+      "d": 4,
+      "n_try": 3,
+      "ls": 10,
+      "patience": 20
+    }
+  }
+}

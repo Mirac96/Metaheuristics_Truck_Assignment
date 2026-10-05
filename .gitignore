@@ -1,0 +1,20 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Configuración del IDE
+.idea/
+.vscode/
+
+# Byte-compilados de Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Ficheros del sistema
+.DS_Store
+Thumbs.db
+
+# Artefactos temporales de depuración
+/tmp_*.py

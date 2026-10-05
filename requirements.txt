@@ -1,0 +1,10 @@
+# Todo el proyecto (datos, decodificador geométrico, las tres metaheurísticas,
+# el diseño experimental, el análisis estadístico y los ficheros JSON/CSV
+# entregables) funciona ÚNICAMENTE con la biblioteca estándar de Python 3.8+.
+# No se usa ningún paquete de optimización (DEAP, pymoo, mealpy, ...), ninguno
+# estadístico (scipy, statsmodels) ni ningún paquete de datos (pandas, numpy).
+#
+# matplotlib es OPCIONAL y sirve sólo para generar los PNG de apoyo
+# (empaquetado 3D y curvas de convergencia).  Si no se instala, el experimento
+# se ejecuta igual y sólo se omite esa parte.
+matplotlib>=3.3
